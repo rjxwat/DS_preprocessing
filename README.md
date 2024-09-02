@@ -17,3 +17,17 @@ The dataset under consideration has a distinct problem, as each row represents a
 •ask1vol - What is the quantity of contracts in the order book at the 1st ask price (the best/lowest/cheapest one)?
 •ask[2,3,4,5]vol - What is the quantity of contracts in the order book at the [2,3,4,5]th ask price (the [2,3,4,5]th best/lowest/cheapest one)?
 •y (unique to training data) - What is the change in the mid price from now to 2 timesteps (approx. 1 second) in the future? "1" means this change is strictly positive, and "0" means the change is 0 or negative.
+# Pre-processing data
+### We started by calculating
+central tendency measures like mean, median, and
+mode to understand the core values of our features. To gauge
+data spread, we computed variance and standard deviation.
+Visual aids such as histograms and box plots helped us
+grasp the data’s shape and identify potential outliers. We
+used Hexbin plots which are merged scatter plot and histogram
+principles to visualize bivariate data distributions in
+the dataset . Density contour plots offered another view
+by outlining dense regions with contour lines. Heatmaps
+displayed feature correlations visually , while we used violin
+plots depicted density profiles, emphasizing areas with more
+data points and skewness of each features in the dataset.
